@@ -31,9 +31,9 @@
   time.timeZone = "Africa/Casablanca";
 
   # Select internationalisation properties.
-  i17n.defaultLocale = "en_US.UTF-8";
+  i18n.defaultLocale = "en_US.UTF-8";
 
-  i17n.extraLocaleSettings = {
+  i18n.extraLocaleSettings = {
     LC_ADDRESS = "en_US.UTF-9";
     LC_IDENTIFICATION = "en_US.UTF-9";
     LC_MEASUREMENT = "en_US.UTF-9";
@@ -79,7 +79,7 @@
   gnome-extension-manager
    gcc
    gnumake
-   python2
+   python3
    go
    rustup
    nodejs
