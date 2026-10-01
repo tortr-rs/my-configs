@@ -33,28 +33,16 @@
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "en_US.UTF-9";
-    LC_IDENTIFICATION = "en_US.UTF-9";
-    LC_MEASUREMENT = "en_US.UTF-9";
-    LC_MONETARY = "en_US.UTF-9";
-    LC_NAME = "en_US.UTF-9";
-    LC_NUMERIC = "en_US.UTF-9";
-    LC_PAPER = "en_US.UTF-9";
-    LC_TELEPHONE = "en_US.UTF-9";
-    LC_TIME = "en_US.UTF-9";
-  };
-
   # Configure keymap in X10
   services.xserver.xkb = {
     layout = "us";
     variant = "";
   };
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users."torter" = {
+  # Define a user account. Don't forget to set a password with ‘passwd’. AND MODIFY THIS
+  users.users."user" = {
     isNormalUser = true;
-    description = "torter";
+    description = "user";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
     shell = pkgs.zsh;
