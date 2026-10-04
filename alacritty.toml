@@ -1,0 +1,83 @@
+# ~/.config/alacritty/alacritty.toml
+# Equivalent vibe to kitty.conf — Catppuccin Mocha + transparency
+
+[window]
+padding = { x = 14, y = 14 }
+decorations = "None"
+opacity = 0.85
+
+[font]
+size = 12.0
+
+[font.normal]
+family = "monospace"
+style = "Regular"
+
+[font.bold]
+family = "monospace"
+style = "Bold"
+
+[font.italic]
+family = "monospace"
+style = "Italic"
+
+[font.bold_italic]
+family = "monospace"
+style = "Bold Italic"
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+
+[scrolling]
+history = 10000
+multiplier = 1
+
+[mouse]
+hide_when_typing = true
+
+[selection]
+save_to_clipboard = false
+
+[colors.primary]
+foreground = "#CDD6F4"
+background = "#1E1E2E"
+
+[colors.cursor]
+text = "#1E1E2E"
+cursor = "#F5E0DC"
+
+[colors.selection]
+text = "#1E1E2E"
+background = "#F5E0DC"
+
+[colors.normal]
+black = "#45475A"
+red = "#F38BA8"
+green = "#A6E3A1"
+yellow = "#F9E2AF"
+blue = "#89B4FA"
+magenta = "#F5C2E7"
+cyan = "#94E2D5"
+white = "#BAC2DE"
+
+[colors.bright]
+black = "#585B70"
+red = "#F38BA8"
+green = "#A6E3A1"
+yellow = "#F9E2AF"
+blue = "#89B4FA"
+magenta = "#F5C2E7"
+cyan = "#94E2D5"
+white = "#A6ADC8"
+
+[keyboard]
+bindings = [
+  { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" },
+  { key = "T", mods = "Control|Shift", action = "CreateNewWindow" },
+  { key = "W", mods = "Control|Shift", action = "Quit" },
+  { key = "C", mods = "Control|Shift", action = "Copy" },
+  { key = "V", mods = "Control|Shift", action = "Paste" },
+  { key = "Plus", mods = "Control|Shift", action = "IncreaseFontSize" },
+  { key = "Minus", mods = "Control|Shift", action = "DecreaseFontSize" },
+  { key = "Back", mods = "Control|Shift", action = "ResetFontSize" }
+]
