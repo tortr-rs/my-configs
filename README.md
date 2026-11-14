@@ -1,1 +1,1 @@
-##my shitty cofnigs
+my shitty cofnigs
